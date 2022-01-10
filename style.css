@@ -7,7 +7,7 @@ body {
 .header {
   padding: 24px 16px;
   background-color: #fff;
-  width: 100%;
+  width: 320px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -116,6 +116,7 @@ body {
   margin: 0px 16px;
 }
 .text__parahrap {
+  margin-top: 0px;
   width: 288px;
   font-size: 14px;
   line-height: 18px;
@@ -126,10 +127,10 @@ body {
 .text__read-more-link {
   display: flex;
   margin-left: 8px;
+  gap: 16px;
   text-decoration: none;
 }
 .text__read-more-link img + h4 {
-  margin-left: 16px;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -158,15 +159,13 @@ body {
   }
   .hidden {
     display: flex;
+    gap: 16px;
   }
 
   .header__right-block {
     width: 300px;
   }
 
-  .hiden__image {
-    margin-right: 16px;
-  }
   .information {
     display: flex;
     flex-direction: row;
@@ -184,6 +183,7 @@ body {
     margin-left: 48px;
   }
   .text__parahrap {
+    margin-top: 0px;
     width: 312px;
     height: 170px;
     overflow: hidden;
