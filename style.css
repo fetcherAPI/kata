@@ -58,6 +58,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
 }
 .caption__text {
   height: 40px;
@@ -147,6 +148,72 @@ body {
 .reviews {
   display: none;
 }
+
+/* brand-style */
+.brands {
+  padding: 0px 0px 0px 16px;
+}
+.brands__caption {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  font-weight: lighter;
+  width: 100%;
+  height: 80px;
+  padding: 16px 16px 16px 0px;
+  box-sizing: border-box;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #ffffff 98.61%);
+  border-top: 1px solid #d9fff5;
+}
+.brands__icons {
+}
+.brands__icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 240px;
+  height: 72px;
+}
+.brands__logo {
+  width: 60%;
+}
+.brands__button {
+  width: 40px;
+}
+
+.swiper {
+  width: 340px;
+  height: 72px;
+}
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  width: 240px;
+  height: 72px;
+}
+
+.lglen {
+  width: 65%;
+}
+.lgbut {
+  width: 40px;
+}
+
 /* @medai adaptive layout */
 
 @media (min-width: 365px) and (max-width: 770px) {

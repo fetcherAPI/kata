@@ -7,6 +7,11 @@
     <meta name="keywords" content="ремонтируемые устройство, цены на услуги" />
     <meta name="description" content="услуги и сервисы" />
     <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
     <title>GPS</title>
   </head>
   <body>
@@ -21,7 +26,7 @@
           </a>
         <div class="second-line"></div>
       </div>
-      <div class="header__right-block">
+      <div class="header__right-block ">
         <div class="hidden">
           <a href="#">
             <img class="hiden__image" src="img/call.svg" alt="" srcset="" />
@@ -105,13 +110,56 @@
           </div>
           <div class="gallery">
             <picture>
-              <source srcset="img/midlogo.png" media="(min-width:320px)" >
-              <source srcset="img/biglogo.png" media="(min-width:880px)" >
-              <img src="img/imglogo.png" alt="">
+              <source srcset="img/midlogo.png" media="(min-width:365px)" >
+              <source srcset="img/imglogo.png" media="(min-width:220px)" >
+              <img src="img/biglogo.png" alt="">
             </picture>
           </div>
         </div>
       </section>
+      <section class="brands">
+        <h1 class="brands__caption">
+          РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫX БРЕНДОВ 
+        </h1>
+        <div class="brands__icons">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class = "lglen" src="img/brands/lenovo.svg" alt="">
+                <img class = "lgbut" src="img/brands/go.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class = "lglen" src="img/brands/samsung.svg" alt="">
+                <img class = "lgbut" src="img/brands/go.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class = "lglen" src="img/brands/apple.svg" alt="">
+                <img class = "lgbut" src="img/brands/go.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class = "lglen" src="img/brands/boshh.svg" alt="">
+                <img class = "lgbut" src="img/brands/go.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class = "lglen" src="img/brands/hp.svg" alt="">
+                <img class = "lgbut" src="img/brands/go.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class = "lglen" src="img/brands/acer.svg" alt="">
+                <img class = "lgbut" src="img/brands/go.svg" alt="">
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="swiper-pagination"></div>
+          </div>
+          
+        </div> 
+        </div>
+      </section>
     </main>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
