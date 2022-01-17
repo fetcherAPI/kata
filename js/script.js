@@ -44,6 +44,7 @@ if (screenWidth >= 365) {
 function showMore() {
   let stylyChange = (document.getElementsByClassName(
     "brands__desktop"
-  )[0].style = "height: 220px");
+  )[0].style = "height: max-content");
+
   stylyChange;
 }
