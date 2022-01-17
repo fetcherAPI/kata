@@ -4,10 +4,13 @@ body {
   background-color: #f8f8f8;
   font-family: TT Lakes;
 }
+main {
+  padding: 0;
+}
 .header {
   padding: 24px 16px;
   background-color: #fff;
-  width: 320px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -220,11 +223,10 @@ body {
 }
 
 .brands__desktop {
-  width: 1000px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   height: 150px;
-
   overflow: hidden;
 }
 
@@ -232,7 +234,9 @@ body {
   display: none;
   color: red;
 }
-
+html {
+  width: 100%;
+}
 .brands__desktop2 {
   display: flex;
   flex-wrap: wrap;
