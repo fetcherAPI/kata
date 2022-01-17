@@ -219,6 +219,41 @@ body {
   width: 50px;
 }
 
+.brands__desktop {
+  width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  height: 150px;
+
+  overflow: hidden;
+}
+
+.show_more {
+  display: none;
+  color: red;
+}
+
+.brands__desktop2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 5px;
+  column-gap: 20px;
+  width: 1200px;
+}
+.brands__desktop3 {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  width: 240px;
+  height: 72px;
+}
+
 /* @medai adaptive layout */
 
 @media (min-width: 365px) and (max-width: 770px) {
