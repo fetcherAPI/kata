@@ -33,7 +33,7 @@ function myFunction() {
 }
 const screenWidth = window.screen.width;
 console.log(screenWidth);
-if (screenWidth > 770) {
+if (screenWidth >= 770) {
   console.log("good job");
   let show = (document.getElementsByClassName("show_more")[0].style =
     "display: flex");
