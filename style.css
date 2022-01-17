@@ -189,6 +189,7 @@ body {
 .swiper {
   width: 340px;
   height: 72px;
+  box-sizing: border-box;
 }
 .swiper-wrapper {
   display: flex;
@@ -196,6 +197,7 @@ body {
 }
 .swiper-slide {
   display: flex;
+  flex-shrink: 1;
   justify-content: space-between;
   padding: 0 16px;
   background: #ffffff;
@@ -207,11 +209,14 @@ body {
   height: 72px;
 }
 
-.lglen {
-  width: 65%;
+.swiper-slide__brand-logo {
+  width: 150px;
 }
-.lgbut {
+.swiper-slide__button {
   width: 40px;
+}
+.swiper-slide__brand-logo_min-image {
+  width: 50px;
 }
 
 /* @medai adaptive layout */
