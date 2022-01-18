@@ -228,6 +228,7 @@ main {
 
 .action--visibility {
   display: none;
+  font-weight: lighter;
 }
 /* 
 sidebar  */
@@ -289,9 +290,11 @@ sidebar  */
   width: 240px;
   height: 72px;
 }
-
+.swiper-slide {
+  width: 240px;
+}
 .swiper-slide__brand-logo {
-  width: 150px;
+  width: 60%;
 }
 .swiper-slide__button {
   width: 40px;
@@ -307,23 +310,20 @@ sidebar  */
   height: 150px;
   flex-shrink: 2;
   overflow: hidden;
-  background-color: red;
 }
 
 .show_more {
   display: none;
-  color: red;
 }
 
 .brands__desktop2 {
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: row;
   overflow: hidden;
   gap: 5px;
-  column-gap: 20px;
-  width: 1200px;
+  column-gap: 15px;
+  width: 100%;
 }
 .brands__desktop3 {
   display: flex;
@@ -337,7 +337,9 @@ sidebar  */
   width: 240px;
   height: 72px;
 }
-
+.section-content__img {
+  transition: 0.8s;
+}
 /* media quary */
 
 @media (min-width: 768px) {
@@ -363,7 +365,7 @@ sidebar  */
     width: 312px;
   }
 
-  .section-content__p--visibility {
+  .section-content__p--hidden {
     display: block;
   }
 
@@ -413,7 +415,7 @@ sidebar  */
     display: block;
   }
 
-  .section-content__more--visibility {
+  .section-content__more--hidden {
     display: inline;
   }
 

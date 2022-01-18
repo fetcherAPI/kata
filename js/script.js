@@ -23,28 +23,35 @@ function myFunction() {
   el2.classList.add("brands__desktop3");
 
   let el3 = document.querySelectorAll("#deleteclass2 .swiper-slide");
-  // .forEach((n) => n.classList.remove("swiper-slide"));
+
   console.log(typeof el3);
   for (key in el3) {
-    /* ... делать что-то с obj[key] ... */
     el3[key].classList.remove("swiper-slide");
     el3[key].classList.add("brands__desktop3");
   }
 }
+
+let btnShower = document.getElementsByClassName("section-content__btn");
+btnShower[1].addEventListener("mouseover", (e) => {
+  document.getElementsByClassName("brands__desktop")[0].style = "height: 150px";
+  document.getElementsByClassName("section-content__img")[0].style =
+    "transform: rotate(0deg)";
+  document.getElementById("closeTxt").innerHTML = "Показать все";
+});
+
+btnShower[1].addEventListener("click", () => {
+  document.getElementsByClassName("brands__desktop")[0].style =
+    "height: max-content";
+  document.getElementsByClassName("section-content__img")[0].style =
+    "transform: rotate(-180deg)";
+
+  document.getElementById("closeTxt").innerHTML = "Скрыть";
+});
+
 const screenWidth = window.screen.width;
-console.log(screenWidth);
+
 if (screenWidth >= 365) {
   console.log("good job");
-  let show = (document.getElementsByClassName("show_more")[0].style =
-    "display: flex");
-  console.log(`show`, show);
+  document.getElementsByClassName("show_more")[0].style = "display: flex";
   myFunction();
-}
-
-function showMore() {
-  let stylyChange = (document.getElementsByClassName(
-    "brands__desktop"
-  )[0].style = "height: max-content");
-
-  stylyChange;
 }
